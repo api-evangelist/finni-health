@@ -1,8 +1,27 @@
 aid: finni-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/finni-health.png
 name: Finni Health
-description: Finni Health is a company surfaced as a portfolio company of general-catalyst and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Finni Health is a telehealth company that connects families of children on the
+  autism spectrum with Applied Behavior Analysis (ABA) therapists and mental
+  health providers. Operating across more than 30 states, Finni offers both
+  in-home and in-clinic ABA therapy with flexible scheduling, handles insurance
+  coordination and billing for its provider network, and gives parents a portal
+  for progress tracking and family-led goal setting. The company positions itself
+  as an operating platform for ABA practices as well as a care provider for
+  families, but publishes no public developer program, API documentation, or
+  machine-readable API specifications at this time.
 url: https://raw.githubusercontent.com/api-evangelist/finni-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Autism
+- ABA Therapy
+- Telehealth
+- Mental Health
+- Behavioral Health
+- Insurance
+common:
+- type: DomainSecurity
+  url: security/finni-health-domain-security.yml
+- type: Website
+  url: https://www.finnihealth.com/
+- type: SignUp
+  url: https://parents.finnihealth.com/inquire
+- type: Login
+  url: https://parents.finnihealth.com/login
+- type: TermsOfService
+  url: https://www.finnihealth.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.finnihealth.com/privacy-policy
+- type: Support
+  url: mailto:care@finnihealth.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
